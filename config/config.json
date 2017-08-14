@@ -1,0 +1,22 @@
+{
+    "server": {
+        "ports": {
+            "api": 9355
+        }
+    },
+    "database": {
+        "connectionString": "mongodb://127.0.0.1:27017/AnonQ",
+        "url": "127.0.0.1",
+        "port": 27017,
+        "clearDatabase": true,
+        "seed": {
+            "module": "~/Documents/github/gouda-fileserver/dist/config/mongo-seed"
+        }
+    },
+    "security": {
+        "key": "nao surtem!!!!!!!!!",
+        "adminPassword": "welcome1",
+        "tokenSecret": "fullygrownbanana",
+        "tokenExpiration": "1h"
+    }
+}

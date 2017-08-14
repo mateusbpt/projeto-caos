@@ -1,0 +1,18 @@
+language: node_js
+sudo: false
+dist: trusty
+node_js:
+  - "7"
+jobs:
+  include:
+    - stage: Install
+      before_script:
+        - npm install -g gulp-cli
+      script:
+        - npm run build
+    - stage: Unit Tests
+      before_script:
+        - npm install -g gulp-cli
+        - npm run build
+      script:
+        - npm test

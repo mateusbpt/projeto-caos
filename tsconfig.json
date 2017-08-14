@@ -1,0 +1,17 @@
+{
+    "files": [
+        "api/*.ts",
+        "api/**/*.ts",
+        "app/*.ts",
+        "app/**/*.ts",
+        "config/*.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5",
+        "outDir": "dist"
+    },
+    "typeRoots": [
+        "./node_modules/@types"
+    ]
+}
